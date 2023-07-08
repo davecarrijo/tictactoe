@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
-	static ArrayList<integer> playerPositions = new ArrayList<integer>();
-	static ArrayList<integer> cpuPositions = new ArrayList<integer>();
+	static ArrayList<Integer> playerPositions = new ArrayList<Integer>();
+	static ArrayList<Integer> cpuPositions = new ArrayList<Integer>();
 
 	public static void main(String[] args) {
 
