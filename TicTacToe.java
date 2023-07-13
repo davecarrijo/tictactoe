@@ -73,8 +73,9 @@ public class TicTacToe {
 
 		if(user.equals("player")) {
 			symbol = 'X';
+			playerPositions.add(pos);
 		} else if(user.equals("cpu")) {
-			symbol = '#';
+			symbol = 'O';
 			cpuPositions.add(pos);
 		}
 
