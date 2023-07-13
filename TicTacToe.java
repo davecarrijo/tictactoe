@@ -133,6 +133,8 @@ public class TicTacToe {
 		winning.add(cross1);
 		winning.add(cross2);
 
+
+//		Como checa o vencedor puts?
 		for(List l : winning) {
 			if(playerPositions.containsAll(l)) {
 				return "Congratulations you won!";
