@@ -47,7 +47,7 @@ public class TicTacToe {
 
         printGameBoard(gameBoard);
 
-        result = checkWinner();
+		result = checkWinner();
         if(result.length() > 0) {
 			System.out.println(result);
 			break;
@@ -121,7 +121,7 @@ public class TicTacToe {
 		List midCol = Arrays.asList(2, 5, 8);
 		List rightCol = Arrays.asList(3, 6, 9);
 		List cross1 = Arrays.asList(1, 5, 9);
-		List cross2 = Arrays.asList(1, 2, 3);
+		List cross2 = Arrays.asList(7, 5, 3);
 
 		List<List> winning = new ArrayList<List>();
 		winning.add(topRow);
@@ -135,11 +135,11 @@ public class TicTacToe {
 
 		for(List l : winning) {
 			if(playerPositions.containsAll(l)) {
-				return "Congratulations you woin!";
+				return "Congratulations you won!";
 			} else if(cpuPositions.contains(l)) {
 				return "CPU wins! Sorry :)";
 			}else if (playerPositions.size() + cpuPositions.size() == 9) {
-				return "Cat!";
+				return "CAT!";
 
 			}
 		}
